@@ -93,6 +93,13 @@ static def getDate() {
     new Date().format('MMMddYYYY_HHmm')
 }
 
+repositories {
+    maven {
+        url 'https://github.com/psiegman/mvn-repo/raw/master/releases'
+    }
+    maven { url 'https://jitpack.io' }
+}
+
 dependencies {
     //Base libs and Jetpack
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
