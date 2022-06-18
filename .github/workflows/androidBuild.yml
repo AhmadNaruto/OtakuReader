@@ -21,7 +21,11 @@ jobs:
       - name: Build Signed APK
         uses: victorbnl/build-signed-apk@main
         with:
-          keystore: ${{ secrets.KS_TEXT }}
+
+          keystore_b64: ${{ secrets.KS_TEXT }}
+
+          #k eystore: ${{ secrets.KS_TEXT }}
+
           keystore_password: ${{ secrets.KS_PSWD }}
           key_alias: ${{ secrets.KS_ALIAS }}
           key_password: ${{ secrets.KS_PSWD }}
