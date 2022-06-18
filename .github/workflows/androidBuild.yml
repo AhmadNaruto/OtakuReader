@@ -25,7 +25,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      steps:
       - name: Clone repo
         uses: actions/checkout@v3
 
