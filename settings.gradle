@@ -4,6 +4,9 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        maven {
+            url 'https://github.com/psiegman/mvn-repo/raw/master/releases'
+        }
     }
 }
 rootProject.name = "OtakuReader"

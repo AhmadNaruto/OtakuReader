@@ -127,7 +127,7 @@ dependencies {
     // Compose Dialog 
     implementation 'com.github.farhanroy:compose-awesome-dialog:1.0.1'
     // Epub tool
-    implementation('nl.siegmann.epublib:epublib-core:4.0') {
+    implementation('nl.siegmann.epublib:epublib-core:3.1') {
         exclude group: 'org.slf4j'
         exclude group: 'xmlpull'
     }
