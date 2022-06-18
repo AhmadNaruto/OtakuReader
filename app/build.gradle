@@ -93,13 +93,6 @@ static def getDate() {
     new Date().format('MMMddYYYY_HHmm')
 }
 
-repositories {
-    maven {
-        url 'https://github.com/psiegman/mvn-repo/raw/master/releases'
-    }
-    maven { url 'https://jitpack.io' }
-}
-
 dependencies {
     //Base libs and Jetpack
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
@@ -134,7 +127,7 @@ dependencies {
     // Compose Dialog 
     implementation 'com.github.farhanroy:compose-awesome-dialog:1.0.1'
     // Epub tool
-    implementation('nl.siegmann.epublib:epublib-core:4.0') {
+    implementation('nl.siegmann.epublib:epublib-core:3.1') {
         exclude group: 'org.slf4j'
         exclude group: 'xmlpull'
     }
